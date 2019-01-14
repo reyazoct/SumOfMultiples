@@ -40,4 +40,10 @@ describe SumOfMultiples do
     som = SumOfMultiples.new(4, 6)
     expect(som.to(15)).to eq 30
   end
+
+  it "test for (5,6,8) with limit 150" do
+    som = SumOfMultiples.new(5, 6, 8)
+    expect(som.to(150)).to eq 4419
+  end
+
 end
