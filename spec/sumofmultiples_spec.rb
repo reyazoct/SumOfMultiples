@@ -15,4 +15,9 @@ describe SumOfMultiples do
     som = SumOfMultiples.new(3)
     expect(som.to(7)).to eq 9
   end
+
+  it "test for (3,5) with limit 10" do
+    som = SumOfMultiples.new(3, 5)
+    expect(som.to(10)).to eq 23
+  end
 end
