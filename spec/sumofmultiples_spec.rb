@@ -76,4 +76,9 @@ describe SumOfMultiples do
     expect(som.to(1)).to eq 0
   end
 
+  it "test (2,3,5,7,11) with limit 10000" do
+    som = SumOfMultiples.new(2, 3, 5, 7, 11)
+    expect(som.to(10000)).to eq 39614537
+  end
+
 end
