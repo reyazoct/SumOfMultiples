@@ -1,12 +1,11 @@
 class SumOfMultiples
-  def initialize(first, second)
-    @first = first
-    @second = second
+  def initialize(*numbers)
+    @numbers = *numbers
   end
 
   def to(range)
     sum = 0
-    [@first, @second].each do |num|
+    @numbers.each do |num|
       x = num
       while x < range
         sum += x
