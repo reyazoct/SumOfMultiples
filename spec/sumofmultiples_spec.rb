@@ -61,4 +61,9 @@ describe SumOfMultiples do
     expect(som.to(10000)).to eq 2203160
   end
 
+  it "test for (1) with limit 100" do
+    som = SumOfMultiples.new(1)
+    expect(som.to(100)).to eq 4950
+  end
+
 end
